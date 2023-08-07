@@ -245,7 +245,6 @@ def raw_data(df):
             break
 
 
-
     print('-'*40)
 
 def main():
