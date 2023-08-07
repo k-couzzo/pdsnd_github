@@ -191,7 +191,7 @@ def user_stats(df, city):
 
 
     # Display counts of user types
-    print('User types: ', user_stats)
+    print('There are ', user_stats, 'user types.')
 
     # Display counts of gender, except for Washington, which doesn't have any.
     try:
