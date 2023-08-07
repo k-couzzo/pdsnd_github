@@ -34,7 +34,7 @@ The user also has the ability to view the raw filtered data 5 rows at a time.
 The .csv file for Washington DC is missing gender and date of birth data. These statistics are not shown when the user selects 'washington'.
 
 ### Requirements
-1) Python 3
+1) Python 3.6 or greater
 2) pandas
 3) NumPy
 
