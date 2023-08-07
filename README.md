@@ -1,5 +1,5 @@
 ### Date created
-This project was originally created on July 24th, 2023. The Github repository was created on August 7th, 2023.
+This project was originally created on July 24th, 2023. Modifications to the project were completed August 6th, 2023. The Github repository was created on August 7th, 2023.
 
 ### Explore US Bikeshare Data
 Replace the Project Title
