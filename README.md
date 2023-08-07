@@ -5,7 +5,7 @@ This project was originally created on July 24th, 2023. The Github repository wa
 Replace the Project Title
 
 ### Description
-This project uses Python to explore data related to bike share systems for three major cities in the United States for the Programming for Data Science with Python Nanodegree project from Udacity. The cities included are Chicago, New York City, and Washington DC. The code allows an interactive experience for the user. The user can filter the data by month or by day of the week. The project returns descriptive statistics about the data.
+This project uses Python and the popular libraries pandas and NumPy to explore data related to bike share systems for three major cities in the United States for the Programming for Data Science with Python Nanodegree project from Udacity. The cities included are Chicago, New York City, and Washington DC. The code allows an interactive experience for the user. The user can filter the data by month or by day of the week. The project returns descriptive statistics about the data.
 
 ###### These statistics include the following information regarding the date of the rental:
 1) The day of the week that occurred most frequently in the data set
