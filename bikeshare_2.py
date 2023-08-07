@@ -226,8 +226,8 @@ def raw_data(df):
     more raw data to be displayed.
     """
     i = 0
+    show_raw_data = str(input("Would you like to view individual trip data? Please, type 'yes' or 'no'"))
     while True:
-        show_raw_data = str(input("Would you like to view individual trip data? Please, type 'yes' or 'no'"))
         show_raw_data = show_raw_data.lower()
         while True:
             if show_raw_data != 'yes':
@@ -235,14 +235,15 @@ def raw_data(df):
             if show_raw_data == 'yes':
                 print(df[i:i+5])
                 i += 5
-                continue_raw_data = input('Do you want to see more raw data?')
-                continue_raw_data = continue_raw_data.lower()
-                if continue_raw_data != 'yes':
+                show_raw_data = input('Do you want to see more raw data?')
+                show_raw_data = show_raw_data.lower()
+                if show_raw_data != 'yes':
                     break
             if show_raw_data != 'yes':
                 break
         if show_raw_data != 'yes':
             break
+
 
 
     print('-'*40)
