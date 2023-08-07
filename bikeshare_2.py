@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+import datetime
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -44,7 +45,7 @@ def get_filters():
             break
        else:
             print('Please enter just one of the following: month, day, both, none')
-            
+
 
 
     # get user input for month (all, january, february, ... , june)
@@ -187,7 +188,7 @@ def user_stats(df, city):
     # Creating variables to answer below
     user_stats = df['User Type'].value_counts()
 
-    
+
 
     # Display counts of user types
     print('User types: ', user_stats)
@@ -204,8 +205,14 @@ def user_stats(df, city):
         earliest_yob = df['Birth Year'].min()
         recent_yob = df['Birth Year'].max()
         popular_yob = df['Birth Year'].mode()[0]
+        today = datetime.date.today()
+        this_year = today.year
+        oldest_customer = this_year - earliest_yob
+        youngest_customer = this_year - recent_yob
         print('The earliest year of birth is:  ', earliest_yob)
+        print('The oldest customer is: ', oldest_customer, 'years old.')
         print ('The most recent year of birth is:  ', recent_yob)
+        print('The youngest customer is: ', youngest_customer, 'years old.')
         print('The most frequent year of birth is:  ', popular_yob)
     except:
         print('There is no date of birth data for this city.')
@@ -213,9 +220,9 @@ def user_stats(df, city):
     print('-'*40)
 
 def raw_data(df):
-    """Your script also needs to prompt the user whether they would like want to see the raw data. If the user answers 'yes,' 
-    then the script should print 5 rows of the data at a time, then ask the user if they would like to see 5 more rows of the data. 
-    The script should continue prompting and printing the next 5 rows at a time until the user chooses 'no,' they do not want any 
+    """Your script also needs to prompt the user whether they would like want to see the raw data. If the user answers 'yes,'
+    then the script should print 5 rows of the data at a time, then ask the user if they would like to see 5 more rows of the data.
+    The script should continue prompting and printing the next 5 rows at a time until the user chooses 'no,' they do not want any
     more raw data to be displayed.
     """
     i = 0
@@ -226,7 +233,7 @@ def raw_data(df):
             if show_raw_data != 'yes':
                 break
             if show_raw_data == 'yes':
-                print(df[i:i+5]) 
+                print(df[i:i+5])
                 i += 5
                 continue_raw_data = input('Do you want to see more raw data?')
                 continue_raw_data = continue_raw_data.lower()
@@ -236,8 +243,8 @@ def raw_data(df):
                 break
         if show_raw_data != 'yes':
             break
-            
-        
+
+
     print('-'*40)
 
 def main():
