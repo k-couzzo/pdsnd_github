@@ -1,25 +1,23 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 ### Date created
-This project was originally created on July 24th, 2023. The Github repository was created on August 7th, 2023.
+This project was originally created on July 24th, 2023. Modifications to the project were completed August 6th, 2023. The Github repository was created on August 7th, 2023.
 
 ### Explore US Bikeshare Data
 Replace the Project Title
 
 ### Description
-This project uses Python to explore data related to bike share systems for three major cities in the United States for the Programming for Data Science with Python Nanodegree project from Udacity. The cities included are Chicago, New York City, and Washington DC. The code allows an interactive experience for the user. The user can filter the data by month or by day of the week. The project returns descriptive statistics about the data.
+This project uses Python and the popular libraries pandas and NumPy to explore data related to bike share systems for three major cities in the United States for the Programming for Data Science with Python Nanodegree project from Udacity. The cities included are Chicago, New York City, and Washington DC. The code allows an interactive experience for the user. The user can filter the data by month or by day of the week. The project returns descriptive statistics about the data.
 
-These statistics include the following information regarding the date of the rental:
+###### These statistics include the following information regarding the date of the rental:
 1) The day of the week that occurred most frequently in the data set
 2) The month that occurred most frequently in the data set
 3) The hour of the day that occurred most frequently in the data set
 
-The following statistics are included regarding location of the Bikeshare:
+###### The following statistics are included regarding location of the Bikeshare:
 1) The starting station that was most frequent
 2) The ending station that was most frequent
 3) The combination of starting and ending station that was most frequent
 
-The following statistics related to trip duration are included:
+###### The following statistics related to trip duration are included:
 1) The total travel time
 2) The average travel time
 
@@ -36,7 +34,7 @@ The user also has the ability to view the raw filtered data 5 rows at a time.
 The .csv file for Washington DC is missing gender and date of birth data. These statistics are not shown when the user selects 'washington'.
 
 ### Requirements
-1) Python 3
+1) Python 3.6 or greater
 2) pandas
 3) NumPy
 
